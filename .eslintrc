@@ -1,0 +1,23 @@
+{
+  "extends": ["airbnb-base", "prettier", "plugin:react/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": ["error"],
+    "no-console": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "globals": {
+    "fail": "readonly",
+    "React": "writable"
+  }
+}
