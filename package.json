@@ -1,8 +1,8 @@
 {
-  "name": "museum-ml-classifier",
+  "name": "ml-tensorflow-node",
   "version": "1.0.0",
-  "description": "image classification app for museum data",
-  "repository": "git@bitbucket.org:steficon/museum-ml-classifier.git",
+  "description": "image classification with tensorflow-node js",
+  "repository": "git@github.com:christoz/ml-tensorflow-node.git",
   "author": "Christos Ziogas <cziogas@steficon.gr>",
   "license": "MIT",
   "scripts": {
