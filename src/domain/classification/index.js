@@ -112,14 +112,10 @@ class Classifier {
       })
       .then(async (activatedImage) => {
         const prediction = this.model.predict(activatedImage);
+        // Logs for validation image in src/domain/classification/data/food/validation/Gado-gado/5491061_683737fc-ab29-4409-83cd-8fb1974036cd.jpg
         if (validationImage.includes('5491061_683737fc-ab29-4409-83cd-8fb1974036cd')) {
           console.log(validationImage);
           console.log('prediction.dataSync()', prediction.dataSync());
-          console.log('prediction.as1D().dataSync()', prediction.as1D().dataSync());
-          console.log(
-            'prediction.as1D().argMax().dataSync()',
-            prediction.as1D().argMax().dataSync()
-          );
         }
         const predictionLabel = prediction.as1D().argMax().dataSync()[0];
         const labelsBlob = await fs.readFile(

@@ -73,5 +73,3 @@ typings/
 # data
 downloads/*.zip
 uploads/*.*
-ml-models/**/*.bin
-ml-models/**/*.json
